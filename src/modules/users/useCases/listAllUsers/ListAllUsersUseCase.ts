@@ -16,7 +16,7 @@ class ListAllUsersUseCase {
     }
 
     if (!userAlreadyExists.admin) {
-      throw new Error("Only Admin can be list all users");
+      throw new Error("Only Admins can list all users");
     }
 
     return this.usersRepository.list();
