@@ -1,0 +1,14 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Challenge 04",
+    "description": "This is an API for Challenge 04",
+    "version": "1.0.0",
+    "contact": {
+      "email": "felipe.pichl@hotmail.com"
+    }
+  },
+  "paths": {
+    "/users": {}
+  }
+}
