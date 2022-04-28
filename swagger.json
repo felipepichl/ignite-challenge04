@@ -40,6 +40,11 @@
             "description": "Created"
           }
         }
+      },
+      "get": {
+        "tags": ["Users"],
+        "summary": "List all users",
+        "responses": {}
       }
     }
   }
