@@ -68,6 +68,11 @@
       "get": {
         "tags": ["Users"],
         "summary": "List all users",
+        "description": "Only `admin` user can access",
+        "parameters": {
+          "name": "user_id",
+          "in": "path"
+        },
         "responses": {
           "200": {
             "description": "Success",
