@@ -69,10 +69,17 @@
         "tags": ["Users"],
         "summary": "List all users",
         "description": "Only `admin` user can access",
-        "parameters": {
-          "name": "user_id",
-          "in": "path"
-        },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "user_id",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "required": true
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success",
