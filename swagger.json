@@ -95,7 +95,35 @@
                     "email": {
                       "type": "string"
                     }
-                  }
+                  },
+                  "example": [
+                    {
+                      "id": "463e7b67-f3c1-4301-b960-eda7337737b8",
+                      "admin": true,
+                      "name": "John Due",
+                      "email": "johndue@example.com",
+                      "created_at": "2022-05-01T23:42:36.778Z",
+                      "updated_at": "2022-05-01T23:42:36.778Z"
+                    },
+                    {
+                      "id": "a8629921-b499-4bb7-960a-b390f24186c3",
+                      "admin": false,
+                      "name": "John Tre",
+                      "email": "johntre@example.com",
+                      "created_at": "2022-05-01T23:34:41.286Z",
+                      "updated_at": "2022-05-01T23:34:41.286Z"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error: Bad Request",
+            "content": {
+              "application/json": {
+                "example": {
+                  "error":"You need to be an administrator to list all users"
                 }
               }
             }
